@@ -4,27 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carta</title>
+    <title>Carta de Hogwarts</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="envelope-wrapper">
+        <div class="input-container" id="input-container">
+            <h1>Digite seu nome:</h1>
+            <input type="text" id="nameInput" placeholder="Seu nome">
+            <button onclick="createInvitation()">Enviar</button>
+        </div>
+        <div class="envelope-wrapper" id="envelope-wrapper">
             <div class="envelope">
                 <div class="letter">
-                    <div class="text">
-                        <strong>Caro Amigo(a),</strong>
-                        <p>
-                            É com muita alegria que venho convidar você para comemorar comigo mais um ano de vida! Será
-                            um prazer ter sua presença para celebrar este momento especial.
-                        </p>
+                    <div class="text" id="letter-text">
 
-                        <lu>
-                            <li class="lista">Data: 22/08/1999</li>
-                            <li class="lista">Horário: 23:50</li>
-                            <li class="lista"> Local: Ibiapina - CE</li>
-                        </lu>
                     </div>
                 </div>
             </div>
